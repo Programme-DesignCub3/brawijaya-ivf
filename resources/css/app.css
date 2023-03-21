@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    font-family: "MuseoModerno";
+}
+
+header {
+    @apply leading-5 font-black bg-fixed bg-no-repeat bg-cover bg-transparent bg-center text-center;
+    color: #555555;
+    min-height: calc(80vh - 180px);
+    background-image: url(/images/baby_hand.webp?b84fb21…);
+}
+
+.container {
+    @apply relative max-w-6xl my-0 px-20 xl:px-0 xl:mx-auto;
+}
+
+.bright-arrow {
+    position: relative;
+    bottom: 0;
+    /* height: 25px; */
+    width: 100%;
+    left: 0;
+    z-index: 100;
+}
+
+.bright-arrow-1 {
+    /* clip-path: polygon(0 0, 50% 0, 100% 100%, 0% 100%); */
+
+    left: 0;
+    border-right-color: transparent !important;
+
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    height: 0;
+    box-sizing: border-box;
+    border: 25px solid transparent;
+    border-top: none;
+}
+
+.bright-arrow-2 {
+    /* clip-path: polygon(50% 0, 100% 0, 100% 100%, 0% 100%); */
+
+    right: 0;
+    border-left-color: transparent !important;
+
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    height: 0;
+    box-sizing: border-box;
+    border: 25px solid transparent;
+    border-top: none;
+}
+
+button {
+    @apply font-dm;
+}
