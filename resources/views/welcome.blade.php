@@ -21,13 +21,14 @@
 
 <body class="relative">
     <nav class="w-full">
-        <div class="absolute top-0 left-0 z-10 flex w-full justify-evenly text-white">
+        <div class="absolute top-0 left-0 z-10 flex w-full justify-evenly p-4 text-white">
             <div class="flex gap-4">
                 <p>Hope is real, make your</p>
                 <p>Our Service</p>
             </div>
             <div class="text-center">
-                <img src="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_300,w_300,f_auto,q_auto/1/VmfjSmD_kzbhuf.png"
+                <img class="inline-block"
+                    src="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_300,w_300,f_auto,q_auto/1/VmfjSmD_kzbhuf.png"
                     alt="logo">
                 <p>Brawijaya IVF Center</p>
             </div>
@@ -37,6 +38,29 @@
                 <p>Ask Us for More</p>
             </div>
         </div>
+
+        {{-- fixed one --}}
+        <div class="fixed top-0 left-0 z-30 flex w-full justify-evenly bg-white p-4 text-black transition"
+            id="navbarFixed">
+
+            <div class="flex gap-4">
+                <p>Hope is real, make your</p>
+                <p>Our Service</p>
+            </div>
+
+            <div class="text-center">
+                <img class="inline-block"
+                    src="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_300,w_300,f_auto,q_auto/1/VmfjSmD_kzbhuf.png"
+                    alt="logo">
+                {{-- <p>Brawijaya IVF Center</p> --}}
+            </div>
+            <div class="flex gap-4">
+                <p>Why Brawijaya IVF Center</p>
+                <p>FAQ</p>
+                <p>Ask Us for More</p>
+            </div>
+        </div>
+
     </nav>
 
     <header class="relative flex h-screen flex-col items-center justify-center align-middle">
@@ -203,5 +227,54 @@
 
     </footer>
 </body>
+
+
+<script>
+    const el = document.querySelector('#service')
+    const navbarFixed = document.querySelector('#navbarFixed')
+
+    function isElementInViewport(el) {
+
+        var rect = el.getBoundingClientRect();
+        return (
+            rect.top <= 50
+            // &&
+            // rect.left >= 0 &&
+            // rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            // rect.right <= (window.innerWidth || document.documentElement.clientWidth) /* or $(window).width() */
+        );
+    }
+
+
+    function onVisibilityChange(el, callback) {
+        var old_visible;
+        return function() {
+            var visible = isElementInViewport(el);
+            if (visible != old_visible) {
+                old_visible = visible;
+                if (typeof callback == 'function') {
+                    callback();
+                }
+            }
+        }
+    }
+
+    var handler = onVisibilityChange(el, function() {
+        console.log('ciluk ba');
+        navbarFixed.classList.toggle("-translate-y-full");
+    });
+
+    if (window.addEventListener) {
+        addEventListener('DOMContentLoaded', handler, false);
+        addEventListener('load', handler, false);
+        addEventListener('scroll', handler, false);
+        addEventListener('resize', handler, false);
+    } else if (window.attachEvent) {
+        attachEvent('onDOMContentLoaded', handler); // Internet Explorer 9+ :(
+        attachEvent('onload', handler);
+        attachEvent('onscroll', handler);
+        attachEvent('onresize', handler);
+    }
+</script>
 
 </html>
