@@ -8,31 +8,34 @@
     <title>MCU Brawijaya Hospital</title>
 
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    {{-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=MuseoModerno:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-
+        href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=MuseoSans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet"> --}}
     <!-- Styles -->
+
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
 </head>
 
 <body class="relative">
+
     <nav class="w-full">
-        <div class="absolute top-0 left-0 z-10 flex w-full justify-evenly p-4 text-white">
-            <div class="flex gap-4">
+        <div class="absolute top-0 left-0 z-10 flex w-full justify-center gap-16 p-4 align-middle text-white">
+            <div class="flex items-center justify-end gap-10">
                 <p>Hope is real, make your</p>
                 <p>Our Service</p>
             </div>
-            <div class="text-center">
-                <img class="inline-block"
+
+            <div class="shrink-0 text-center">
+                <img class="inline-block max-h-16"
                     src="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_300,w_300,f_auto,q_auto/1/VmfjSmD_kzbhuf.png"
                     alt="logo">
                 <p>Brawijaya IVF Center</p>
             </div>
-            <div class="flex gap-4">
+
+            <div class="flex items-center justify-start gap-10">
                 <p>Why Brawijaya IVF Center</p>
                 <p>FAQ</p>
                 <p>Ask Us for More</p>
@@ -40,25 +43,26 @@
         </div>
 
         {{-- fixed one --}}
-        <div class="fixed top-0 left-0 z-30 flex w-full justify-evenly bg-white p-4 text-black transition"
+        <div class="fixed top-0 left-0 z-30 flex w-full -translate-y-[110%] justify-center gap-16 bg-white p-4 align-middle text-black transition duration-500 ease-in-out"
             id="navbarFixed">
-
-            <div class="flex gap-4">
+            <div class="flex items-center justify-end gap-10">
                 <p>Hope is real, make your</p>
                 <p>Our Service</p>
             </div>
 
-            <div class="text-center">
-                <img class="inline-block"
+            <div class="-m-4 -mb-5 grid shrink-0 place-items-center bg-[#e4e4e4] p-4 text-center">
+                <img class="inline-block max-h-16"
                     src="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_300,w_300,f_auto,q_auto/1/VmfjSmD_kzbhuf.png"
                     alt="logo">
                 {{-- <p>Brawijaya IVF Center</p> --}}
             </div>
-            <div class="flex gap-4">
+
+            <div class="flex items-center justify-start gap-10">
                 <p>Why Brawijaya IVF Center</p>
                 <p>FAQ</p>
                 <p>Ask Us for More</p>
             </div>
+
         </div>
 
     </nav>
@@ -232,6 +236,7 @@
 <script>
     const el = document.querySelector('#service')
     const navbarFixed = document.querySelector('#navbarFixed')
+    let old_visible = false;
 
     function isElementInViewport(el) {
 
@@ -247,9 +252,10 @@
 
 
     function onVisibilityChange(el, callback) {
-        var old_visible;
+
         return function() {
             var visible = isElementInViewport(el);
+            console.log(visible);
             if (visible != old_visible) {
                 old_visible = visible;
                 if (typeof callback == 'function') {
@@ -261,17 +267,17 @@
 
     var handler = onVisibilityChange(el, function() {
         console.log('ciluk ba');
-        navbarFixed.classList.toggle("-translate-y-full");
+        navbarFixed.classList.toggle("-translate-y-[110%]");
     });
 
     if (window.addEventListener) {
-        addEventListener('DOMContentLoaded', handler, false);
-        addEventListener('load', handler, false);
+        // addEventListener('DOMContentLoaded', handler, false);
+        // addEventListener('load', handler, false);
         addEventListener('scroll', handler, false);
         addEventListener('resize', handler, false);
     } else if (window.attachEvent) {
-        attachEvent('onDOMContentLoaded', handler); // Internet Explorer 9+ :(
-        attachEvent('onload', handler);
+        // attachEvent('onDOMContentLoaded', handler); // Internet Explorer 9+ :(
+        // attachEvent('onload', handler);
         attachEvent('onscroll', handler);
         attachEvent('onresize', handler);
     }

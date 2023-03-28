@@ -1,1 +1,1375 @@
-/*! tailwindcss v3.2.7 | MIT License | https://tailwindcss.com*/*,:after,:before{border:0 solid #e5e7eb;box-sizing:border-box}:after,:before{--tw-content:""}html{-webkit-text-size-adjust:100%;font-feature-settings:normal;font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4}body{line-height:inherit;margin:0}hr{border-top-width:1px;color:inherit;height:0}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{border-collapse:collapse;border-color:inherit;text-indent:0}button,input,optgroup,select,textarea{color:inherit;font-family:inherit;font-size:100%;font-weight:inherit;line-height:inherit;margin:0;padding:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{color:#9ca3af;opacity:1}input::placeholder,textarea::placeholder{color:#9ca3af;opacity:1}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{height:auto;max-width:100%}[hidden]{display:none}*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }.container{width:100%}@media (min-width:640px){.container{max-width:640px}}@media (min-width:768px){.container{max-width:768px}}@media (min-width:1024px){.container{max-width:1024px}}@media (min-width:1280px){.container{max-width:1280px}}@media (min-width:1536px){.container{max-width:1536px}}.visible{visibility:visible}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.left-0{left:0}.top-0{top:0}.z-10{z-index:10}.z-30{z-index:30}.mb-10{margin-bottom:2.5rem}.mb-12{margin-bottom:3rem}.inline-block{display:inline-block}.flex{display:flex}.h-6{height:1.5rem}.h-auto{height:auto}.h-full{height:100%}.h-screen{height:100vh}.w-1\/2{width:50%}.w-6{width:1.5rem}.w-full{width:100%}.flex-shrink-0{flex-shrink:0}.flex-grow{flex-grow:1}.-translate-y-full{--tw-translate-y:-100%;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.resize{resize:both}.list-disc{list-style-type:disc}.flex-col{flex-direction:column}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-center{justify-content:center}.justify-evenly{justify-content:space-evenly}.gap-2{gap:.5rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.self-start{align-self:flex-start}.rounded-\[4px\]{border-radius:4px}.rounded-sm{border-radius:.125rem}.border-2{border-width:2px}.border-white{--tw-border-opacity:1;border-color:rgb(255 255 255/var(--tw-border-opacity))}.bg-\[\#333333\]{--tw-bg-opacity:1;background-color:rgb(51 51 51/var(--tw-bg-opacity))}.bg-g-dark-blue{--tw-bg-opacity:1;background-color:rgb(70 82 102/var(--tw-bg-opacity))}.bg-g-wood-gold{--tw-bg-opacity:1;background-color:rgb(199 178 153/var(--tw-bg-opacity))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity))}.object-contain{-o-object-fit:contain;object-fit:contain}.object-top{-o-object-position:top;object-position:top}.p-2{padding:.5rem}.p-4{padding:1rem}.px-24{padding-left:6rem;padding-right:6rem}.px-4{padding-left:1rem;padding-right:1rem}.py-1{padding-bottom:.25rem;padding-top:.25rem}.py-10{padding-bottom:2.5rem;padding-top:2.5rem}.py-14{padding-bottom:3.5rem;padding-top:3.5rem}.py-20{padding-bottom:5rem;padding-top:5rem}.py-32{padding-bottom:8rem;padding-top:8rem}.pl-10{padding-left:2.5rem}.pt-10{padding-top:2.5rem}.text-center{text-align:center}.align-middle{vertical-align:middle}.font-mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}.font-montserat{font-family:Montserrat,sans-serif}.font-sans{font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji}.text-2xl{font-size:1.5rem;line-height:2rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-6xl{font-size:3.75rem;line-height:1}.text-lg{font-size:1.125rem}.text-lg,.text-xl{line-height:1.75rem}.text-xl{font-size:1.25rem}.font-black{font-weight:900}.font-bold{font-weight:700}.uppercase{text-transform:uppercase}.text-black{--tw-text-opacity:1;color:rgb(0 0 0/var(--tw-text-opacity))}.text-red-600{--tw-text-opacity:1;color:rgb(220 38 38/var(--tw-text-opacity))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}.transition{transition-duration:.15s;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1)}html{font-family:MuseoModerno}header{background-attachment:fixed;background-color:transparent;background-image:url(/images/baby_hand.webp?b84fb21…);background-position:50%;background-repeat:no-repeat;background-size:cover;color:#555;font-weight:900;line-height:1.25rem;min-height:calc(80vh - 180px);text-align:center}.container{margin-bottom:0;margin-top:0;max-width:72rem;padding-left:5rem;padding-right:5rem;position:relative}@media (min-width:1280px){.container{margin-left:auto;margin-right:auto;padding-left:0;padding-right:0}}.bright-arrow{bottom:0;left:0;position:relative;width:100%;z-index:100}.bright-arrow-1{border-right-color:transparent!important;border:25px solid transparent;border-top:none;left:0}.bright-arrow-1,.bright-arrow-2{bottom:0;box-sizing:border-box;height:0;position:absolute;width:50%}.bright-arrow-2{border-left-color:transparent!important;border:25px solid transparent;border-top:none;right:0}button{font-family:DM Mono,monospace}@media not all and (min-width:1280px){.max-xl\:h-screen{height:100vh}}@media not all and (min-width:768px){.max-md\:order-1{order:1}.max-md\:order-2{order:2}.max-md\:order-3{order:3}.max-md\:order-first{order:-9999}}@media (min-width:768px){.md\:w-1\/3{width:33.333333%}.md\:flex-row{flex-direction:row}}
+/*
+! tailwindcss v3.2.7 | MIT License | https://tailwindcss.com
+*//*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box; /* 1 */
+  border-width: 0; /* 2 */
+  border-style: solid; /* 2 */
+  border-color: #e5e7eb; /* 2 */
+}
+
+::before,
+::after {
+  --tw-content: '';
+}
+
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
+*/
+
+html {
+  line-height: 1.5; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -moz-tab-size: 4; /* 3 */
+  -o-tab-size: 4;
+     tab-size: 4; /* 3 */
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 4 */
+  font-feature-settings: normal; /* 5 */
+}
+
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+
+body {
+  margin: 0; /* 1 */
+  line-height: inherit; /* 2 */
+}
+
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+
+hr {
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
+  border-top-width: 1px; /* 3 */
+}
+
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr:where([title]) {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/*
+Remove the default font size and weight for headings.
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/*
+1. Use the user's configured `mono` font family by default.
+2. Correct the odd `em` font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/*
+Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+
+table {
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
+  border-collapse: collapse; /* 3 */
+}
+
+/*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  font-weight: inherit; /* 1 */
+  line-height: inherit; /* 1 */
+  color: inherit; /* 1 */
+  margin: 0; /* 2 */
+  padding: 0; /* 3 */
+}
+
+/*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+button,
+select {
+  text-transform: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button; /* 1 */
+  background-color: transparent; /* 2 */
+  background-image: none; /* 2 */
+}
+
+/*
+Use the modern Firefox focus style for all focusable elements.
+*/
+
+:-moz-focusring {
+  outline: auto;
+}
+
+/*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+  vertical-align: baseline;
+}
+
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+  display: list-item;
+}
+
+/*
+Removes the default spacing and border for appropriate elements.
+*/
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Prevent resizing textareas horizontally by default.
+*/
+
+textarea {
+  resize: vertical;
+}
+
+/*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 1; /* 1 */
+  color: #9ca3af; /* 2 */
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1; /* 1 */
+  color: #9ca3af; /* 2 */
+}
+
+/*
+Set the default cursor for buttons.
+*/
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+:disabled {
+  cursor: default;
+}
+
+/*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block; /* 1 */
+  vertical-align: middle; /* 2 */
+}
+
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make elements with the HTML hidden attribute stay hidden by default */
+[hidden] {
+  display: none;
+}
+    @font-face {
+        font-family: MuseoSans;
+        src: url(/fonts/MuseoSans-100.eot?74f60aec7a6fe77dbef18cc24f22bc3b);
+        src: url(/fonts/MuseoSans-100.eot?74f60aec7a6fe77dbef18cc24f22bc3b?#iefix)
+                format("embedded-opentype"),
+            url(/fonts/MuseoSans-100.woff2?ee6bb8fba3f248bbf18d2ce26a7080a4) format("woff2"),
+            url(/fonts/MuseoSans-100.woff?033df7bf65bf3a26b9776749b3daea23) format("woff"),
+            url(/fonts/MuseoSans-100.ttf?49a62f01123a8c06c0094921efdfbe79)
+                format("truetype");
+        font-weight: 200;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: MuseoSans;
+        src: url(/fonts/MuseoSans-100_1.eot?74f60aec7a6fe77dbef18cc24f22bc3b);
+        src: url(/fonts/MuseoSans-100_1.eot?74f60aec7a6fe77dbef18cc24f22bc3b?#iefix)
+                format("embedded-opentype"),
+            url(/fonts/MuseoSans-100_1.woff2?ee6bb8fba3f248bbf18d2ce26a7080a4)
+                format("woff2"),
+            url(/fonts/MuseoSans-100_1.woff?033df7bf65bf3a26b9776749b3daea23) format("woff"),
+            url(/fonts/MuseoSans-100_1.ttf?49a62f01123a8c06c0094921efdfbe79)
+                format("truetype");
+        font-weight: 200;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: MuseoSans;
+        src: url(/fonts/MuseoSans-100_2.eot?33f624953baac1d31e7a76afab9b9ea9);
+        src: url(/fonts/MuseoSans-100_2.eot?33f624953baac1d31e7a76afab9b9ea9?#iefix)
+                format("embedded-opentype"),
+            url(/fonts/MuseoSans-100_2.woff2?c9ccb873a278a0c1e258e9399bb7c87a)
+                format("woff2"),
+            url(/fonts/MuseoSans-100_2.woff?d013b5db3f0b07164a98457f449294ee) format("woff"),
+            url(/fonts/MuseoSans-100_2.ttf?b75d3faec079866efa796da36a2c0ba4)
+                format("truetype");
+        font-weight: 300;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: MuseoSans;
+        src: url(/fonts/MuseoSans-100Italic.eot?98ed950697570491134c04030a6667aa);
+        src: url(/fonts/MuseoSans-100Italic.eot?98ed950697570491134c04030a6667aa?#iefix)
+                format("embedded-opentype"),
+            url(/fonts/MuseoSans-100Italic.woff2?9f8b78227949d7c629e8090f4c1c46c8)
+                format("woff2"),
+            url(/fonts/MuseoSans-100Italic.woff?5329fbc065a32f23e9d60cfa8a787147)
+                format("woff"),
+            url(/fonts/MuseoSans-100Italic.ttf?669b5ae2d3747d0d17a5e61d2b77c17a)
+                format("truetype");
+        font-weight: 200;
+        font-style: italic;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: MuseoSans;
+        src: url(/fonts/MuseoSans-100Italic_1.eot?2d3cd6b1af9ba02b087230b7eae2788e);
+        src: url(/fonts/MuseoSans-100Italic_1.eot?2d3cd6b1af9ba02b087230b7eae2788e?#iefix)
+                format("embedded-opentype"),
+            url(/fonts/MuseoSans-100Italic_1.woff2?62de9a411843996a6f6c30be4a93ad32)
+                format("woff2"),
+            url(/fonts/MuseoSans-100Italic_1.woff?353b70de2fb24e40888e797648a03dc0)
+                format("woff"),
+            url(/fonts/MuseoSans-100Italic_1.ttf?08d0b1cd68231438a416abd2bb6615e4)
+                format("truetype");
+        font-weight: 300;
+        font-style: italic;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: MuseoSans;
+        src: url(/fonts/MuseoSans-100Italic_2.eot?4d5fe1524e7f10da434758dae893099b);
+        src: url(/fonts/MuseoSans-100Italic_2.eot?4d5fe1524e7f10da434758dae893099b?#iefix)
+                format("embedded-opentype"),
+            url(/fonts/MuseoSans-100Italic_2.woff2?89772a7a2ef6a64e7938e0ef3bbfe20c)
+                format("woff2"),
+            url(/fonts/MuseoSans-100Italic_2.woff?aa5804eb43eea75ff2863ee13b360f7e)
+                format("woff"),
+            url(/fonts/MuseoSans-100Italic_2.ttf?425d3af6c7fa2efd07f6c892b8f19f24)
+                format("truetype");
+        font-weight: 200;
+        font-style: italic;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: MuseoSans;
+        src: url(/fonts/MuseoSans-300.eot?8604eec15fb36a0d7a1a9d82213abfb7);
+        src: url(/fonts/MuseoSans-300.eot?8604eec15fb36a0d7a1a9d82213abfb7?#iefix)
+                format("embedded-opentype"),
+            url(/fonts/MuseoSans-300.woff2?37a4de54b41b4bf21b1af8cc1737a60d) format("woff2"),
+            url(/fonts/MuseoSans-300.woff?b539804e1ef996aabb73cbb17b325335) format("woff"),
+            url(/fonts/MuseoSans-300.ttf?5a8646df80bcbe3368628d12d5fd1432)
+                format("truetype");
+        font-weight: 300;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: MuseoSans;
+        src: url(/fonts/MuseoSans-300_1.eot?8604eec15fb36a0d7a1a9d82213abfb7);
+        src: url(/fonts/MuseoSans-300_1.eot?8604eec15fb36a0d7a1a9d82213abfb7?#iefix)
+                format("embedded-opentype"),
+            url(/fonts/MuseoSans-300_1.woff2?37a4de54b41b4bf21b1af8cc1737a60d)
+                format("woff2"),
+            url(/fonts/MuseoSans-300_1.woff?b539804e1ef996aabb73cbb17b325335) format("woff"),
+            url(/fonts/MuseoSans-300_1.ttf?5a8646df80bcbe3368628d12d5fd1432)
+                format("truetype");
+        font-weight: 300;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: MuseoSans;
+        src: url(/fonts/MuseoSans-300_2.eot?66bcef77ad0e7e922524cb88d2db5df1);
+        src: url(/fonts/MuseoSans-300_2.eot?66bcef77ad0e7e922524cb88d2db5df1?#iefix)
+                format("embedded-opentype"),
+            url(/fonts/MuseoSans-300_2.woff2?de646eee0ea9d218becd51f0bbdf5421)
+                format("woff2"),
+            url(/fonts/MuseoSans-300_2.woff?83c71c72c10164dbed1e033c9f5b3ef6) format("woff"),
+            url(/fonts/MuseoSans-300_2.ttf?7a23bea0ab99b17365c523342d318b8c)
+                format("truetype");
+        font-weight: 300;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: MuseoSans;
+        src: url(/fonts/MuseoSans-300Italic.eot?fae650b4f3af5c59554c98daa42d333a);
+        src: url(/fonts/MuseoSans-300Italic.eot?fae650b4f3af5c59554c98daa42d333a?#iefix)
+                format("embedded-opentype"),
+            url(/fonts/MuseoSans-300Italic.woff2?789a1036dc5412aa9df8fdd387baec5c)
+                format("woff2"),
+            url(/fonts/MuseoSans-300Italic.woff?346638d931e67ecf2371298341696cee)
+                format("woff"),
+            url(/fonts/MuseoSans-300Italic.ttf?98b2cf0debf6b5976a8df257944d540e)
+                format("truetype");
+        font-weight: 300;
+        font-style: italic;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: MuseoSans;
+        src: url(/fonts/MuseoSans-300Italic_1.eot?9788724fe71dfd9ada5956e8c41972ee);
+        src: url(/fonts/MuseoSans-300Italic_1.eot?9788724fe71dfd9ada5956e8c41972ee?#iefix)
+                format("embedded-opentype"),
+            url(/fonts/MuseoSans-300Italic_1.woff2?808e52aacdc2a80c2ab3145e9aaa5247)
+                format("woff2"),
+            url(/fonts/MuseoSans-300Italic_1.woff?833c38003e1f1a216fd8c153df91885d)
+                format("woff"),
+            url(/fonts/MuseoSans-300Italic_1.ttf?e5898faa4c6bd97f8efa0c0d2ce0110d)
+                format("truetype");
+        font-weight: 300;
+        font-style: italic;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: MuseoSans;
+        src: url(/fonts/MuseoSans-300Italic_2.eot?01c0542f3372bd887032eb4a51bc27df);
+        src: url(/fonts/MuseoSans-300Italic_2.eot?01c0542f3372bd887032eb4a51bc27df?#iefix)
+                format("embedded-opentype"),
+            url(/fonts/MuseoSans-300Italic_2.woff2?5f60ee7ed28fd9437d287e1a7cdf5f2a)
+                format("woff2"),
+            url(/fonts/MuseoSans-300Italic_2.woff?8c88308bca50abb17260bec22c602244)
+                format("woff"),
+            url(/fonts/MuseoSans-300Italic_2.ttf?9856b05e7211d942ad20feff4191a09e)
+                format("truetype");
+        font-weight: 300;
+        font-style: italic;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: ".";
+        src: url(/fonts/78610437a4f8a86132fbf90084dd28f4.eot?bc905ae2f14d572efa6277f8a0c92031);
+        src: url(/fonts/78610437a4f8a86132fbf90084dd28f4.eot?bc905ae2f14d572efa6277f8a0c92031?#iefix)
+                format("embedded-opentype"),
+            url(/fonts/78610437a4f8a86132fbf90084dd28f4.woff2?d29e416c7705d2ebfbea2c0b8667e061)
+                format("woff2"),
+            url(/fonts/78610437a4f8a86132fbf90084dd28f4.woff?e2a2666ae96778d02fb8dfbc13c610da)
+                format("woff"),
+            url(/fonts/78610437a4f8a86132fbf90084dd28f4.ttf?7c9206df0da96a1ca8cc773eb16739a5)
+                format("truetype");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: ".";
+        src: url(/fonts/364b0bd1a290dc89395ae801250a6227.eot?bc905ae2f14d572efa6277f8a0c92031);
+        src: url(/fonts/364b0bd1a290dc89395ae801250a6227.eot?bc905ae2f14d572efa6277f8a0c92031?#iefix)
+                format("embedded-opentype"),
+            url(/fonts/364b0bd1a290dc89395ae801250a6227.woff2?d29e416c7705d2ebfbea2c0b8667e061)
+                format("woff2"),
+            url(/fonts/364b0bd1a290dc89395ae801250a6227.woff?e2a2666ae96778d02fb8dfbc13c610da)
+                format("woff"),
+            url(/fonts/364b0bd1a290dc89395ae801250a6227.ttf?7c9206df0da96a1ca8cc773eb16739a5)
+                format("truetype");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: MuseoSans;
+        src: url(/fonts/MuseoSans-500.eot?7f243cf3f75ccf0885ef510df470cc98);
+        src: url(/fonts/MuseoSans-500.eot?7f243cf3f75ccf0885ef510df470cc98?#iefix)
+                format("embedded-opentype"),
+            url(/fonts/MuseoSans-500.woff2?3b32f0a2c64673788c3b585d8ab124be) format("woff2"),
+            url(/fonts/MuseoSans-500.woff?a95efa29440a9deb7638b2bf0b05bd90) format("woff"),
+            url(/fonts/MuseoSans-500.ttf?4acacbc67ee67938b7e89b28bf0b873a)
+                format("truetype");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: MuseoSans;
+        src: url(/fonts/MuseoSans-500Italic.eot?c34f4b86efbfe2bc402c8d38ff5121ee);
+        src: url(/fonts/MuseoSans-500Italic.eot?c34f4b86efbfe2bc402c8d38ff5121ee?#iefix)
+                format("embedded-opentype"),
+            url(/fonts/MuseoSans-500Italic.woff2?87a84d5e258b852fc6e2509c0197137a)
+                format("woff2"),
+            url(/fonts/MuseoSans-500Italic.woff?c33e1b7589eb0d0073b728d698022c61)
+                format("woff"),
+            url(/fonts/MuseoSans-500Italic.ttf?c386f64982cf3d06f7a6869cb074a70a)
+                format("truetype");
+        font-weight: normal;
+        font-style: italic;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: MuseoSans;
+        src: url(/fonts/MuseoSans-500Italic_1.eot?33479e64ba141db92ebbce56845b42ee);
+        src: url(/fonts/MuseoSans-500Italic_1.eot?33479e64ba141db92ebbce56845b42ee?#iefix)
+                format("embedded-opentype"),
+            url(/fonts/MuseoSans-500Italic_1.woff2?2f2f74aeb5dc30e6894ff5da6b61672c)
+                format("woff2"),
+            url(/fonts/MuseoSans-500Italic_1.woff?d4d7ed47553f0802654b3a51647f8e8a)
+                format("woff"),
+            url(/fonts/MuseoSans-500Italic_1.ttf?8cbec4f6d33ec78351280f7de50a7823)
+                format("truetype");
+        font-weight: normal;
+        font-style: italic;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: MuseoSans;
+        src: url(/fonts/MuseoSans-500Italic_2.eot?c34f4b86efbfe2bc402c8d38ff5121ee);
+        src: url(/fonts/MuseoSans-500Italic_2.eot?c34f4b86efbfe2bc402c8d38ff5121ee?#iefix)
+                format("embedded-opentype"),
+            url(/fonts/MuseoSans-500Italic_2.woff2?87a84d5e258b852fc6e2509c0197137a)
+                format("woff2"),
+            url(/fonts/MuseoSans-500Italic_2.woff?c33e1b7589eb0d0073b728d698022c61)
+                format("woff"),
+            url(/fonts/MuseoSans-500Italic_2.ttf?c386f64982cf3d06f7a6869cb074a70a)
+                format("truetype");
+        font-weight: normal;
+        font-style: italic;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: MuseoSans;
+        src: url(/fonts/MuseoSans-700.eot?d6a47078f753c15e9245bb0a4e29b5a2);
+        src: url(/fonts/MuseoSans-700.eot?d6a47078f753c15e9245bb0a4e29b5a2?#iefix)
+                format("embedded-opentype"),
+            url(/fonts/MuseoSans-700.woff2?7a8e6a87b2026603c3f5126c70e731e1) format("woff2"),
+            url(/fonts/MuseoSans-700.woff?f3d76143eb2af811c3672f65173fcb86) format("woff"),
+            url(/fonts/MuseoSans-700.ttf?3c6341b226db896ec3eb2e6046348eee)
+                format("truetype");
+        font-weight: 600;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: MuseoSans;
+        src: url(/fonts/MuseoSans-700_1.eot?d6a47078f753c15e9245bb0a4e29b5a2);
+        src: url(/fonts/MuseoSans-700_1.eot?d6a47078f753c15e9245bb0a4e29b5a2?#iefix)
+                format("embedded-opentype"),
+            url(/fonts/MuseoSans-700_1.woff2?7a8e6a87b2026603c3f5126c70e731e1)
+                format("woff2"),
+            url(/fonts/MuseoSans-700_1.woff?f3d76143eb2af811c3672f65173fcb86) format("woff"),
+            url(/fonts/MuseoSans-700_1.ttf?3c6341b226db896ec3eb2e6046348eee)
+                format("truetype");
+        font-weight: 600;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: MuseoSans;
+        src: url(/fonts/MuseoSans-700_2.eot?9bc6f0cb563189ef6f2e48faf6d55234);
+        src: url(/fonts/MuseoSans-700_2.eot?9bc6f0cb563189ef6f2e48faf6d55234?#iefix)
+                format("embedded-opentype"),
+            url(/fonts/MuseoSans-700_2.woff2?2a42fe45f3990909d5dff2c6e4386394)
+                format("woff2"),
+            url(/fonts/MuseoSans-700_2.woff?ecf676e9e6af97f357bd4e161b5dede1) format("woff"),
+            url(/fonts/MuseoSans-700_2.ttf?792857f20ae0abc2bc1178e8eb371dc1)
+                format("truetype");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: MuseoSans;
+        src: url(/fonts/MuseoSans-700Italic.eot?f3687014b7961e236b0becf9e1c1da9a);
+        src: url(/fonts/MuseoSans-700Italic.eot?f3687014b7961e236b0becf9e1c1da9a?#iefix)
+                format("embedded-opentype"),
+            url(/fonts/MuseoSans-700Italic.woff2?a9fde617c3291830d4c5d024c902fb76)
+                format("woff2"),
+            url(/fonts/MuseoSans-700Italic.woff?a21000df5351763fafde484dcf774793)
+                format("woff"),
+            url(/fonts/MuseoSans-700Italic.ttf?1ba8eb3f9f97d1e8bf4e1da0166b5ef3)
+                format("truetype");
+        font-weight: 600;
+        font-style: italic;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: MuseoSans;
+        src: url(/fonts/MuseoSans-700Italic_1.eot?8a4ab29047ba1be8a900d855ccc971bd);
+        src: url(/fonts/MuseoSans-700Italic_1.eot?8a4ab29047ba1be8a900d855ccc971bd?#iefix)
+                format("embedded-opentype"),
+            url(/fonts/MuseoSans-700Italic_1.woff2?beeba9fa7f47dc3c36be25b16e7c053a)
+                format("woff2"),
+            url(/fonts/MuseoSans-700Italic_1.woff?674bc803aa2e93e73b44b4a7f7c6e29a)
+                format("woff"),
+            url(/fonts/MuseoSans-700Italic_1.ttf?2f5a657b1aabd769f7e9c70a4382f699)
+                format("truetype");
+        font-weight: normal;
+        font-style: italic;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: MuseoSans;
+        src: url(/fonts/MuseoSans-700Italic_2.eot?f3687014b7961e236b0becf9e1c1da9a);
+        src: url(/fonts/MuseoSans-700Italic_2.eot?f3687014b7961e236b0becf9e1c1da9a?#iefix)
+                format("embedded-opentype"),
+            url(/fonts/MuseoSans-700Italic_2.woff2?a9fde617c3291830d4c5d024c902fb76)
+                format("woff2"),
+            url(/fonts/MuseoSans-700Italic_2.woff?a21000df5351763fafde484dcf774793)
+                format("woff"),
+            url(/fonts/MuseoSans-700Italic_2.ttf?1ba8eb3f9f97d1e8bf4e1da0166b5ef3)
+                format("truetype");
+        font-weight: 600;
+        font-style: italic;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: MuseoSans;
+        src: url(/fonts/MuseoSans-900.eot?659dc0a83c6a20e91caec4d72470be8a);
+        src: url(/fonts/MuseoSans-900.eot?659dc0a83c6a20e91caec4d72470be8a?#iefix)
+                format("embedded-opentype"),
+            url(/fonts/MuseoSans-900.woff2?a6d82f4afd63e0d26497fa527294f651) format("woff2"),
+            url(/fonts/MuseoSans-900.woff?be059f18b59ac324e31c45a660e04584) format("woff"),
+            url(/fonts/MuseoSans-900.ttf?86c784ac9fe2aa1c3b59f82a5b59c0dc)
+                format("truetype");
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: MuseoSans;
+        src: url(/fonts/MuseoSans-900_1.eot?bd7155005eecc06c49d7fb88c2508df2);
+        src: url(/fonts/MuseoSans-900_1.eot?bd7155005eecc06c49d7fb88c2508df2?#iefix)
+                format("embedded-opentype"),
+            url(/fonts/MuseoSans-900_1.woff2?e0d872f383738c9cbdb47b02a81b15b2)
+                format("woff2"),
+            url(/fonts/MuseoSans-900_1.woff?9cee5e10787a70b25be596dcc2a2069c) format("woff"),
+            url(/fonts/MuseoSans-900_1.ttf?c039b1ce6fc7b8164e2fed4a5f819648)
+                format("truetype");
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: MuseoSans;
+        src: url(/fonts/MuseoSans-900_2.eot?82fa8666dce4449f7fdb2ea6705d0a6b);
+        src: url(/fonts/MuseoSans-900_2.eot?82fa8666dce4449f7fdb2ea6705d0a6b?#iefix)
+                format("embedded-opentype"),
+            url(/fonts/MuseoSans-900_2.woff2?f19c0aeadc21ab85510a26dd26b30a28)
+                format("woff2"),
+            url(/fonts/MuseoSans-900_2.woff?59ec6aacf5513829b92200cfdc557b34) format("woff"),
+            url(/fonts/MuseoSans-900_2.ttf?83dd0a2c9e14a78376727de195818f8f)
+                format("truetype");
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: MuseoSans;
+        src: url(/fonts/MuseoSans-900Italic.eot?3763195484a7a6623a4a46ebbd11f503);
+        src: url(/fonts/MuseoSans-900Italic.eot?3763195484a7a6623a4a46ebbd11f503?#iefix)
+                format("embedded-opentype"),
+            url(/fonts/MuseoSans-900Italic.woff2?a7c941ed061ac4e075377ad9105b844c)
+                format("woff2"),
+            url(/fonts/MuseoSans-900Italic.woff?5a870996969856687b3c1acf114898fd)
+                format("woff"),
+            url(/fonts/MuseoSans-900Italic.ttf?2da237d86ccd0bf1351808d23d7f1721)
+                format("truetype");
+        font-weight: bold;
+        font-style: italic;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: MuseoSans;
+        src: url(/fonts/MuseoSans-900Italic_1.eot?3763195484a7a6623a4a46ebbd11f503);
+        src: url(/fonts/MuseoSans-900Italic_1.eot?3763195484a7a6623a4a46ebbd11f503?#iefix)
+                format("embedded-opentype"),
+            url(/fonts/MuseoSans-900Italic_1.woff2?a7c941ed061ac4e075377ad9105b844c)
+                format("woff2"),
+            url(/fonts/MuseoSans-900Italic_1.woff?5a870996969856687b3c1acf114898fd)
+                format("woff"),
+            url(/fonts/MuseoSans-900Italic_1.ttf?2da237d86ccd0bf1351808d23d7f1721)
+                format("truetype");
+        font-weight: bold;
+        font-style: italic;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: MuseoSans;
+        src: url(/fonts/MuseoSans-900Italic_2.eot?11e3ab21f721b64275a555ee811e0c08);
+        src: url(/fonts/MuseoSans-900Italic_2.eot?11e3ab21f721b64275a555ee811e0c08?#iefix)
+                format("embedded-opentype"),
+            url(/fonts/MuseoSans-900Italic_2.woff2?331487c5b6368f4255e00568f969a79f)
+                format("woff2"),
+            url(/fonts/MuseoSans-900Italic_2.woff?7d4d1bfa1fc289651e4a6ac461e18013)
+                format("woff"),
+            url(/fonts/MuseoSans-900Italic_2.ttf?cf5478de515f5aa96122932a47988207)
+                format("truetype");
+        font-weight: bold;
+        font-style: italic;
+        font-display: swap;
+    }
+
+*, ::before, ::after {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+
+::backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+.container {
+  width: 100%;
+}
+@media (min-width: 640px) {
+
+  .container {
+    max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+
+  .container {
+    max-width: 1024px;
+  }
+}
+@media (min-width: 1280px) {
+
+  .container {
+    max-width: 1280px;
+  }
+}
+@media (min-width: 1536px) {
+
+  .container {
+    max-width: 1536px;
+  }
+}
+.visible {
+  visibility: visible;
+}
+.fixed {
+  position: fixed;
+}
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
+.left-0 {
+  left: 0px;
+}
+.top-0 {
+  top: 0px;
+}
+.z-10 {
+  z-index: 10;
+}
+.z-30 {
+  z-index: 30;
+}
+.-m-4 {
+  margin: -1rem;
+}
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+.mb-12 {
+  margin-bottom: 3rem;
+}
+.-mb-5 {
+  margin-bottom: -1.25rem;
+}
+.inline-block {
+  display: inline-block;
+}
+.flex {
+  display: flex;
+}
+.grid {
+  display: grid;
+}
+.hidden {
+  display: none;
+}
+.h-6 {
+  height: 1.5rem;
+}
+.h-auto {
+  height: auto;
+}
+.h-full {
+  height: 100%;
+}
+.h-screen {
+  height: 100vh;
+}
+.max-h-16 {
+  max-height: 4rem;
+}
+.w-1\/2 {
+  width: 50%;
+}
+.w-6 {
+  width: 1.5rem;
+}
+.w-full {
+  width: 100%;
+}
+.flex-shrink-0 {
+  flex-shrink: 0;
+}
+.shrink-0 {
+  flex-shrink: 0;
+}
+.flex-grow {
+  flex-grow: 1;
+}
+.-translate-y-full {
+  --tw-translate-y: -100%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.-translate-y-\[110\%\] {
+  --tw-translate-y: -110%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.resize {
+  resize: both;
+}
+.list-disc {
+  list-style-type: disc;
+}
+.flex-col {
+  flex-direction: column;
+}
+.place-items-center {
+  place-items: center;
+}
+.items-start {
+  align-items: flex-start;
+}
+.items-center {
+  align-items: center;
+}
+.justify-start {
+  justify-content: flex-start;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-evenly {
+  justify-content: space-evenly;
+}
+.gap-2 {
+  gap: 0.5rem;
+}
+.gap-4 {
+  gap: 1rem;
+}
+.gap-6 {
+  gap: 1.5rem;
+}
+.gap-8 {
+  gap: 2rem;
+}
+.gap-10 {
+  gap: 2.5rem;
+}
+.gap-16 {
+  gap: 4rem;
+}
+.self-start {
+  align-self: flex-start;
+}
+.rounded-\[4px\] {
+  border-radius: 4px;
+}
+.rounded-sm {
+  border-radius: 0.125rem;
+}
+.border-2 {
+  border-width: 2px;
+}
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+.bg-\[\#333333\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 51 51 / var(--tw-bg-opacity));
+}
+.bg-\[\#e4e4e4\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(228 228 228 / var(--tw-bg-opacity));
+}
+.bg-g-dark-blue {
+  --tw-bg-opacity: 1;
+  background-color: rgb(70 82 102 / var(--tw-bg-opacity));
+}
+.bg-g-wood-gold {
+  --tw-bg-opacity: 1;
+  background-color: rgb(199 178 153 / var(--tw-bg-opacity));
+}
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.object-top {
+  -o-object-position: top;
+     object-position: top;
+}
+.p-2 {
+  padding: 0.5rem;
+}
+.p-4 {
+  padding: 1rem;
+}
+.px-24 {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+.py-14 {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.py-32 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+.pl-10 {
+  padding-left: 2.5rem;
+}
+.pt-10 {
+  padding-top: 2.5rem;
+}
+.text-center {
+  text-align: center;
+}
+.align-middle {
+  vertical-align: middle;
+}
+.font-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+.font-montserat {
+  font-family: Montserrat, sans-serif;
+}
+.font-sans {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+.font-black {
+  font-weight: 900;
+}
+.font-bold {
+  font-weight: 700;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+.text-red-600 {
+  --tw-text-opacity: 1;
+  color: rgb(220 38 38 / var(--tw-text-opacity));
+}
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.opacity-0 {
+  opacity: 0;
+}
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.duration-500 {
+  transition-duration: 500ms;
+}
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html {
+    font-family: "MuseoSans";
+}
+
+header {
+  background-color: transparent;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  font-weight: 900;
+  line-height: 1.25rem;
+    color: #555555;
+    min-height: calc(80vh - 180px);
+    background-image: url(/images/baby_hand.webp?b84fb21…);
+}
+
+.container {
+  position: relative;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  max-width: 72rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+@media (min-width: 1280px) {
+
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+.bright-arrow {
+    position: relative;
+    bottom: 0;
+    /* height: 25px; */
+    width: 100%;
+    left: 0;
+    z-index: 10;
+}
+
+.bright-arrow-1 {
+    /* clip-path: polygon(0 0, 50% 0, 100% 100%, 0% 100%); */
+
+    left: 0;
+    border-right-color: transparent !important;
+
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    height: 0;
+    box-sizing: border-box;
+    border: 25px solid transparent;
+    border-top: none;
+}
+
+.bright-arrow-2 {
+    /* clip-path: polygon(50% 0, 100% 0, 100% 100%, 0% 100%); */
+
+    right: 0;
+    border-left-color: transparent !important;
+
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    height: 0;
+    box-sizing: border-box;
+    border: 25px solid transparent;
+    border-top: none;
+}
+
+button {
+  font-family: 'DM Mono', monospace;
+}
+
+@media not all and (min-width: 1280px) {
+
+  .max-xl\:h-screen {
+    height: 100vh;
+  }
+}
+
+@media not all and (min-width: 768px) {
+
+  .max-md\:order-1 {
+    order: 1;
+  }
+
+  .max-md\:order-2 {
+    order: 2;
+  }
+
+  .max-md\:order-3 {
+    order: 3;
+  }
+
+  .max-md\:order-first {
+    order: -9999;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .md\:w-1\/3 {
+    width: 33.333333%;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+}
+

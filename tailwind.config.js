@@ -12,7 +12,7 @@ module.exports = {
                 "g-cream": "#e2c0b3",
             },
             fontFamily: {
-                MuseoModerno: "MuseoModerno",
+                MuseoSans: "MuseoSans",
                 montserat: "Montserrat, sans-serif",
                 dm: "'DM Mono', monospace",
             },
