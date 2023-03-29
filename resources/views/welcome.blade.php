@@ -16,60 +16,99 @@
     <!-- Styles -->
 
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <script defer src="https://unpkg.com/alpinejs@3.2.4/dist/cdn.min.js"></script>
 
 </head>
 
 <body class="relative">
 
-    <nav class="w-full">
-        <div class="absolute top-0 left-0 z-10 flex w-full justify-center gap-16 p-4 align-middle text-white">
-            <div class="flex items-center justify-end gap-10">
-                <p>Hope is real, make your</p>
-                <p>Our Service</p>
-            </div>
-
-            <div class="shrink-0 text-center">
-                <img class="inline-block max-h-16"
-                    src="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_300,w_300,f_auto,q_auto/1/VmfjSmD_kzbhuf.png"
-                    alt="logo">
+    <nav class="w-full" x-data="{ isOpen: false }" @keydown.escape="isOpen = false" x-data="{ isOpen: false }"
+        @keydown.escape="isOpen = false">
+        <div
+            class="absolute top-0 left-0 z-10 flex w-full justify-center p-4 align-middle text-white max-lg:flex-wrap max-md:hidden lg:gap-16">
+            <div class="shrink-0 text-center max-lg:w-full lg:order-2">
+                <img class="inline-block max-h-16" src="{{ asset('images/logo.webp') }}" alt="logo">
                 <p>Brawijaya IVF Center</p>
             </div>
 
-            <div class="flex items-center justify-start gap-10">
-                <p>Why Brawijaya IVF Center</p>
-                <p>FAQ</p>
-                <p>Ask Us for More</p>
+            <div class="flex items-center justify-end gap-10 max-lg:justify-evenly lg:order-1 lg:w-[calc(50%-100px)]">
+                <a>Hope is real, make your</a>
+                <a>Our Service</a>
+            </div>
+
+            <div class="flex items-center justify-start gap-10 max-lg:justify-evenly lg:order-3 lg:w-[calc(50%-100px)]">
+                <a>Why Brawijaya IVF Center</a>
+                <a>FAQ</a>
+                <a>Ask Us for More</a>
             </div>
         </div>
 
         {{-- fixed one --}}
-        <div class="fixed top-0 left-0 z-30 flex w-full -translate-y-[110%] justify-center gap-16 bg-white p-4 align-middle text-black transition duration-500 ease-in-out"
+        <div class="fixed top-0 left-0 z-30 flex w-full -translate-y-[110%] justify-center gap-4 bg-white p-4 align-middle text-black transition duration-500 ease-in-out max-lg:flex-wrap max-md:hidden lg:gap-16"
             id="navbarFixed">
-            <div class="flex items-center justify-end gap-10">
-                <p>Hope is real, make your</p>
-                <p>Our Service</p>
+
+            <div class="shrink-0 text-center max-lg:w-full lg:order-2">
+                <div class="inline-block place-items-center bg-[#e4e4e4] p-4 text-center lg:-m-4 lg:-mb-5">
+                    <img class="inline-block max-h-16" src="{{ asset('images/logo.webp') }}" alt="logo">
+                </div>
             </div>
 
-            <div class="-m-4 -mb-5 grid shrink-0 place-items-center bg-[#e4e4e4] p-4 text-center">
-                <img class="inline-block max-h-16"
-                    src="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_300,w_300,f_auto,q_auto/1/VmfjSmD_kzbhuf.png"
-                    alt="logo">
-                {{-- <p>Brawijaya IVF Center</p> --}}
+            <div class="flex items-center justify-end gap-10 max-lg:justify-evenly lg:order-1 lg:w-[calc(50%-100px)]">
+                <a>Hope is real, make your</a>
+                <a>Our Service</a>
             </div>
 
-            <div class="flex items-center justify-start gap-10">
-                <p>Why Brawijaya IVF Center</p>
-                <p>FAQ</p>
-                <p>Ask Us for More</p>
+            <div class="flex items-center justify-start gap-10 max-lg:justify-evenly lg:order-3 lg:w-[calc(50%-100px)]">
+                <a>Why Brawijaya IVF Center</a>
+                <a>FAQ</a>
+                <a>Ask Us for More</a>
             </div>
 
         </div>
 
+        <!-- Mobile menu button -->
+        <div class="fixed left-0 top-0 z-50 md:hidden" :class="{ 'w-full bg-white': isOpen }">
+            <div class="relative left-0 flex h-16 items-center">
+                <button
+                    class="ml-2 inline-flex items-center justify-center rounded-md bg-red-700 p-2 text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                    type="button" aria-controls="mobile-menu" aria-expanded="false" @click="isOpen = !isOpen">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="block h-6 w-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                    <svg class="hidden h-6 w-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile menu, show/hide based on menu state. -->
+            <div class="w-full" id="mobile-menu" x-show="isOpen" x-cloak>
+                <div class="space-y-1 pt-2 pb-4">
+                    <a class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
+                        href="#footer">Hope is real, make your</a>
+                    <a class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
+                        href="#footer">Our Service</a>
+                    <a class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
+                        href="#footer">Why Brawijaya IVF Center</a>
+                    <a class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
+                        href="#footer">FAQ</a>
+                    <a class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
+                        href="#footer">Ask Us for More</a>
+                </div>
+            </div>
+        </div>
     </nav>
 
-    <header class="relative flex h-screen flex-col items-center justify-center align-middle">
+    <header class="relative flex h-screen max-h-[calc(100vh-180px)] flex-col items-center justify-center align-middle">
         <div class="container">
-            <h1 class="mb-12 text-6xl">Hope is real, make your dreams with your loved one come true !</h1>
+            <h1 class="mb-6 text-4xl md:text-5xl lg:mb-12 lg:text-6xl">Hope is real, make your dreams with your loved
+                one come true!
+            </h1>
             <a class="font-button rounded-sm border-2 border-white py-1 px-4 font-mono uppercase text-white"
                 href="#">Explore More...</a>
         </div>
@@ -128,7 +167,7 @@
             <p class="text-xl">Safe, reliable, and unique.</p>
         </div>
 
-        <div class="flex flex-col items-start justify-center gap-4 px-24 text-black md:flex-row">
+        <div class="flex flex-col items-start justify-center gap-4 px-12 text-black md:flex-row lg:px-24">
             <img class="h-auto w-full md:w-1/3" src="{{ asset('assets/faq.webp') }}" alt="">
             <div class="flex flex-col gap-2 rounded-sm bg-white p-4">
                 <p class="text-2xl">SAFETY FIRST</p>
@@ -140,7 +179,7 @@
     </section>
 
     <footer class="flex flex-col items-center bg-g-wood-gold">
-        <h2 class="pt-10 text-4xl font-bold">Ask Us for More Information</h2>
+        <h2 class="pt-10 text-center text-4xl font-bold">Ask Us for More Information</h2>
 
         <div class="container flex flex-shrink-0 flex-grow flex-col gap-4 py-10 md:flex-row">
             <form class="flex flex-col gap-4 max-md:order-3" action="/" method="post">
@@ -148,16 +187,16 @@
 
                 <div class="flex gap-4">
                     <div>
-                        <input class="w-full rounded-sm p-2" type="text" name="name" value="{{ old('name') }}"
-                            placeholder="Name">
+                        <input class="w-full rounded-sm p-2" type="text" name="name"
+                            value="{{ old('name') }}" placeholder="Name">
                         @error('name')
                             <div class="text-red-600">{{ $message }}</div>
                         @enderror
                     </div>
 
                     <div>
-                        <input class="w-full rounded-sm p-2" type="email" name="email" value="{{ old('email') }}"
-                            placeholder="Email">
+                        <input class="w-full rounded-sm p-2" type="email" name="email"
+                            value="{{ old('email') }}" placeholder="Email">
                         @error('title')
                             <div class="text-red-600">{{ $message }}</div>
                         @enderror
@@ -255,7 +294,6 @@
 
         return function() {
             var visible = isElementInViewport(el);
-            console.log(visible);
             if (visible != old_visible) {
                 old_visible = visible;
                 if (typeof callback == 'function') {
@@ -266,7 +304,6 @@
     }
 
     var handler = onVisibilityChange(el, function() {
-        console.log('ciluk ba');
         navbarFixed.classList.toggle("-translate-y-[110%]");
     });
 
