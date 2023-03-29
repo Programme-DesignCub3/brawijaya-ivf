@@ -12,8 +12,16 @@ const mix = require("laravel-mix");
  */
 mix.disableSuccessNotifications();
 
-mix.js("resources/js/app.js", "public/js").postCss(
-    "resources/css/app.css",
-    "public/css",
-    [require("tailwindcss")]
-);
+mix.options({
+        processCssUrls: true
+    })
+    .js("resources/js/app.js", "public/dist/js")
+    .sass("resources/sass/font.scss", "public/dist/css", {
+        // Rewrite CSS urls for font.css
+        processUrls: true,
+    })
+    .postCss(
+        "resources/css/app.css",
+        "public/dist/css",
+        [require("tailwindcss")]
+    );

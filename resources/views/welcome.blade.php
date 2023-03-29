@@ -15,7 +15,8 @@
         rel="stylesheet"> --}}
     <!-- Styles -->
 
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('dist/css/font.css') }}">
+    <link rel="stylesheet" href="{{ asset('dist/css/app.css') }}">
     <script defer src="https://unpkg.com/alpinejs@3.2.4/dist/cdn.min.js"></script>
 
 </head>
