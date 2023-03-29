@@ -5,15 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>MCU Brawijaya Hospital</title>
-
-    <!-- Fonts -->
-    {{-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=MuseoSans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet"> --}}
-    <!-- Styles -->
+    <title>{{ appName() }}</title>
 
     <link rel="stylesheet" href="{{ asset('dist/css/font.css') }}">
     <link rel="stylesheet" href="{{ asset('dist/css/app.css') }}">
@@ -26,8 +18,8 @@
     <nav class="w-full" x-data="{ isOpen: false }" @keydown.escape="isOpen = false" x-data="{ isOpen: false }" @keydown.escape="isOpen = false">
         <div class="absolute top-0 left-0 z-10 w-full justify-center pt-4 pb-2 text-white hidden md:flex">
             <div class="flex items-center justify-end space-x-12 flex-grow w-2/12">
-                <a class="nav-link blue">Our Service</a>
-                <a class="nav-link blue">Why Brawijaya IVF Center</a>
+                <a href="#service" class="nav-link blue">Our Service</a>
+                <a href="#why" class="nav-link blue">Why Brawijaya IVF Center</a>
             </div>
 
             <div class="text-center w-52">
@@ -37,16 +29,16 @@
             </div>
 
             <div class="flex items-center justify-start space-x-12 flex-grow w-2/12">
-                <a class="nav-link blue">FAQ</a>
-                <a class="nav-link blue">Ask Us for More</a>
+                <a href="#faq" class="nav-link blue">FAQ</a>
+                <a href="#contact" class="nav-link blue">Ask Us for More</a>
             </div>
         </div>
 
         {{-- fixed one --}}
         <div class="fixed top-0 left-0 z-30 w-full -translate-y-[110%] justify-center bg-white pt-4 pb-2 text-black transition duration-500 ease-in-out hidden md:flex" id="navbarFixed">
             <div class="flex items-center justify-end gap-10 flex-grow w-2/12">
-                <a class="nav-link">Our Service</a>
-                <a class="nav-link">Why Brawijaya IVF Center</a>
+                <a href="#service" class="nav-link">Our Service</a>
+                <a href="#why" class="nav-link">Why Brawijaya IVF Center</a>
             </div>
 
             <div class="text-center w-52">
@@ -56,8 +48,8 @@
             </div>
 
             <div class="flex items-center justify-start gap-10 flex-grow w-2/12">
-                <a class="nav-link">FAQ</a>
-                <a class="nav-link">Ask Us for More</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+                <a href="#contact" class="nav-link">Ask Us for More</a>
             </div>
 
         </div>
@@ -133,7 +125,7 @@
         </div>
     </section>
 
-    <section class="bg-g-wood-gold">
+    <section class="bg-g-wood-gold" id="why">
         <div class="container flex flex-col items-center gap-8 py-20 text-lg md:flex-row">
             <div class="flex flex-col items-center gap-6 text-center">
                 <h2 class="text-4xl font-black">Why Brawijaya IVF Center</h2>
@@ -154,7 +146,7 @@
 
     </section>
 
-    <section class="flex flex-col items-center justify-center bg-g-dark-blue py-14 text-white max-xl:h-screen">
+    <section class="flex flex-col items-center justify-center bg-g-dark-blue py-14 text-white max-xl:h-screen" id="faq">
 
         <div class="mb-10 flex flex-col items-center justify-center gap-4">
             <h2 class="text-4xl font-bold uppercase">FAQ</h2>
@@ -172,7 +164,7 @@
 
     </section>
 
-    <footer class="flex flex-col items-center bg-g-wood-gold">
+    <footer class="flex flex-col items-center bg-g-wood-gold" id="contact">
         <h2 class="pt-10 text-center text-4xl font-bold">Ask Us for More Information</h2>
 
         <div class="container flex flex-shrink-0 flex-grow flex-col gap-4 py-10 md:flex-row">
