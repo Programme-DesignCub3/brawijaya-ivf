@@ -23,46 +23,41 @@
 
 <body class="relative">
 
-    <nav class="w-full" x-data="{ isOpen: false }" @keydown.escape="isOpen = false" x-data="{ isOpen: false }"
-        @keydown.escape="isOpen = false">
-        <div
-            class="absolute top-0 left-0 z-10 flex w-full justify-center p-4 align-middle text-white max-lg:flex-wrap max-md:hidden lg:gap-16">
-            <div class="shrink-0 text-center max-lg:w-full lg:order-2">
-                <img class="inline-block max-h-16" src="{{ asset('images/logo.webp') }}" alt="logo">
-                <p>Brawijaya IVF Center</p>
+    <nav class="w-full" x-data="{ isOpen: false }" @keydown.escape="isOpen = false" x-data="{ isOpen: false }" @keydown.escape="isOpen = false">
+        <div class="absolute top-0 left-0 z-10 w-full justify-center pt-4 pb-2 text-white hidden md:flex">
+            <div class="flex items-center justify-end space-x-12 flex-grow w-2/12">
+                <a class="nav-link blue">Our Service</a>
+                <a class="nav-link blue">Why Brawijaya IVF Center</a>
             </div>
 
-            <div class="flex items-center justify-end gap-10 max-lg:justify-evenly lg:order-1 lg:w-[calc(50%-100px)]">
-                <a>Hope is real, make your</a>
-                <a>Our Service</a>
+            <div class="text-center w-52">
+                <div class="inline-block place-items-center text-center w-8/12">
+                    <img class="w-full" src="{{ asset('images/logo-ivf.png') }}" alt="logo">
+                </div>
             </div>
 
-            <div class="flex items-center justify-start gap-10 max-lg:justify-evenly lg:order-3 lg:w-[calc(50%-100px)]">
-                <a>Why Brawijaya IVF Center</a>
-                <a>FAQ</a>
-                <a>Ask Us for More</a>
+            <div class="flex items-center justify-start space-x-12 flex-grow w-2/12">
+                <a class="nav-link blue">FAQ</a>
+                <a class="nav-link blue">Ask Us for More</a>
             </div>
         </div>
 
         {{-- fixed one --}}
-        <div class="fixed top-0 left-0 z-30 flex w-full -translate-y-[110%] justify-center gap-4 bg-white p-4 align-middle text-black transition duration-500 ease-in-out max-lg:flex-wrap max-md:hidden lg:gap-16"
-            id="navbarFixed">
+        <div class="fixed top-0 left-0 z-30 w-full -translate-y-[110%] justify-center bg-white pt-4 pb-2 text-black transition duration-500 ease-in-out hidden md:flex" id="navbarFixed">
+            <div class="flex items-center justify-end gap-10 flex-grow w-2/12">
+                <a class="nav-link">Our Service</a>
+                <a class="nav-link">Why Brawijaya IVF Center</a>
+            </div>
 
-            <div class="shrink-0 text-center max-lg:w-full lg:order-2">
-                <div class="inline-block place-items-center bg-[#e4e4e4] p-4 text-center lg:-m-4 lg:-mb-5">
-                    <img class="inline-block max-h-16" src="{{ asset('images/logo.webp') }}" alt="logo">
+            <div class="text-center w-52">
+                <div class="inline-block place-items-center text-center w-8/12">
+                    <img class="w-full" src="{{ asset('images/logo-ivf.png') }}" alt="logo">
                 </div>
             </div>
 
-            <div class="flex items-center justify-end gap-10 max-lg:justify-evenly lg:order-1 lg:w-[calc(50%-100px)]">
-                <a>Hope is real, make your</a>
-                <a>Our Service</a>
-            </div>
-
-            <div class="flex items-center justify-start gap-10 max-lg:justify-evenly lg:order-3 lg:w-[calc(50%-100px)]">
-                <a>Why Brawijaya IVF Center</a>
-                <a>FAQ</a>
-                <a>Ask Us for More</a>
+            <div class="flex items-center justify-start gap-10 flex-grow w-2/12">
+                <a class="nav-link">FAQ</a>
+                <a class="nav-link">Ask Us for More</a>
             </div>
 
         </div>
@@ -91,8 +86,6 @@
             <div class="w-full" id="mobile-menu" x-show="isOpen" x-cloak>
                 <div class="space-y-1 pt-2 pb-4">
                     <a class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
-                        href="#footer">Hope is real, make your</a>
-                    <a class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
                         href="#footer">Our Service</a>
                     <a class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
                         href="#footer">Why Brawijaya IVF Center</a>
@@ -107,7 +100,7 @@
 
     <header class="relative flex h-screen max-h-[calc(100vh-180px)] flex-col items-center justify-center align-middle">
         <div class="container">
-            <h1 class="mb-6 text-4xl md:text-5xl lg:mb-12 lg:text-6xl">Hope is real, make your dreams with your loved
+            <h1 class="mb-6 text-4xl md:text-5xl lg:mb-12 lg:text-6xl tracking-wide text-[#886b88]">Hope is real, make your dreams with your loved
                 one come true!
             </h1>
             <a class="font-button rounded-sm border-2 border-white py-1 px-4 font-mono uppercase text-white"
