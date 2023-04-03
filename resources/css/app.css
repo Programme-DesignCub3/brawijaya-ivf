@@ -2,12 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components{
-    .nav-link{
+@layer components {
+    .nav-link {
         @apply text-base text-gray-700 font-bold leading-none tracking-normal min-w-[200.2px] text-center;
     }
 
-    .nav-link.blue{
+    .nav-link.blue {
         @apply text-[#475366];
     }
 }
@@ -24,7 +24,7 @@ header {
 }
 
 .container {
-    @apply relative max-w-6xl my-0 px-10 lg:px-20 xl:px-0 xl:mx-auto;
+    @apply relative max-w-6xl my-0 px-4 lg:px-20 xl:px-0 xl:mx-auto;
 }
 
 .bright-arrow {

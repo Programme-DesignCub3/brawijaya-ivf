@@ -15,41 +15,43 @@
 
 <body class="relative">
 
-    <nav class="w-full" x-data="{ isOpen: false }" @keydown.escape="isOpen = false" x-data="{ isOpen: false }" @keydown.escape="isOpen = false">
-        <div class="absolute top-0 left-0 z-10 w-full justify-center pt-4 pb-2 text-white hidden md:flex">
-            <div class="flex items-center justify-end space-x-12 flex-grow w-2/12">
-                <a href="#service" class="nav-link blue">Our Service</a>
-                <a href="#why" class="nav-link blue">Why Brawijaya IVF Center</a>
+    <nav class="w-full" x-data="{ isOpen: false }" @keydown.escape="isOpen = false" x-data="{ isOpen: false }"
+        @keydown.escape="isOpen = false">
+        <div class="absolute top-0 left-0 z-10 hidden w-full justify-center pt-4 pb-2 text-white md:flex">
+            <div class="flex w-2/12 flex-grow items-center justify-end space-x-12">
+                <a class="nav-link blue" href="#service">Our Service</a>
+                <a class="nav-link blue" href="#why">Why Brawijaya IVF Center</a>
             </div>
 
-            <div class="text-center w-52">
-                <div class="inline-block place-items-center text-center w-8/12">
+            <div class="w-52 text-center">
+                <div class="inline-block w-8/12 place-items-center text-center">
                     <img class="w-full" src="{{ asset('images/logo-ivf.png') }}" alt="logo">
                 </div>
             </div>
 
-            <div class="flex items-center justify-start space-x-12 flex-grow w-2/12">
-                <a href="#faq" class="nav-link blue">FAQ</a>
-                <a href="#contact" class="nav-link blue">Ask Us for More</a>
+            <div class="flex w-2/12 flex-grow items-center justify-start space-x-12">
+                <a class="nav-link blue" href="#faq">FAQ</a>
+                <a class="nav-link blue" href="#contact">Ask Us for More</a>
             </div>
         </div>
 
         {{-- fixed one --}}
-        <div class="fixed top-0 left-0 z-30 w-full -translate-y-[110%] justify-center bg-white pt-4 pb-2 text-black transition duration-500 ease-in-out hidden md:flex" id="navbarFixed">
-            <div class="flex items-center justify-end gap-10 flex-grow w-2/12">
-                <a href="#service" class="nav-link">Our Service</a>
-                <a href="#why" class="nav-link">Why Brawijaya IVF Center</a>
+        <div class="fixed top-0 left-0 z-30 hidden w-full -translate-y-[110%] justify-center bg-white pt-4 pb-2 text-black transition duration-500 ease-in-out md:flex"
+            id="navbarFixed">
+            <div class="flex w-2/12 flex-grow items-center justify-end gap-10">
+                <a class="nav-link" href="#service">Our Service</a>
+                <a class="nav-link" href="#why">Why Brawijaya IVF Center</a>
             </div>
 
-            <div class="text-center w-52">
-                <div class="inline-block place-items-center text-center w-8/12">
+            <div class="w-52 text-center">
+                <div class="inline-block w-8/12 place-items-center text-center">
                     <img class="w-full" src="{{ asset('images/logo-ivf.png') }}" alt="logo">
                 </div>
             </div>
 
-            <div class="flex items-center justify-start gap-10 flex-grow w-2/12">
-                <a href="#faq" class="nav-link">FAQ</a>
-                <a href="#contact" class="nav-link">Ask Us for More</a>
+            <div class="flex w-2/12 flex-grow items-center justify-start gap-10">
+                <a class="nav-link" href="#faq">FAQ</a>
+                <a class="nav-link" href="#contact">Ask Us for More</a>
             </div>
 
         </div>
@@ -92,7 +94,8 @@
 
     <header class="relative flex h-screen max-h-[calc(100vh-180px)] flex-col items-center justify-center align-middle">
         <div class="container">
-            <h1 class="mb-6 text-4xl md:text-5xl lg:mb-12 lg:text-6xl tracking-wide text-[#886b88]">Hope is real, make your dreams with your loved
+            <h1 class="mb-6 text-4xl tracking-wide text-[#886b88] md:text-5xl lg:mb-12 lg:text-6xl">Hope is real, make
+                your dreams with your loved
                 one come true!
             </h1>
             <a class="font-button rounded-sm border-2 border-white py-1 px-4 font-mono uppercase text-white"
@@ -146,7 +149,8 @@
 
     </section>
 
-    <section class="flex flex-col items-center justify-center bg-g-dark-blue py-14 text-white max-xl:h-screen" id="faq">
+    <section class="flex flex-col items-center justify-center bg-g-dark-blue py-14 text-white max-xl:h-screen"
+        id="faq">
 
         <div class="mb-10 flex flex-col items-center justify-center gap-4">
             <h2 class="text-4xl font-bold uppercase">FAQ</h2>
@@ -168,7 +172,7 @@
         <h2 class="pt-10 text-center text-4xl font-bold">Ask Us for More Information</h2>
 
         <div class="container flex flex-shrink-0 flex-grow flex-col gap-4 py-10 md:flex-row">
-            <form class="flex flex-col gap-4 max-md:order-3" action="/" method="post">
+            <form class="flex flex-col gap-4 max-md:order-3" action="{{ route('storeMessage') }}" method="post">
                 @csrf
 
                 <div class="flex gap-4">
@@ -183,7 +187,7 @@
                     <div>
                         <input class="w-full rounded-sm p-2" type="email" name="email"
                             value="{{ old('email') }}" placeholder="Email">
-                        @error('title')
+                        @error('email')
                             <div class="text-red-600">{{ $message }}</div>
                         @enderror
                     </div>
@@ -191,7 +195,7 @@
 
                 <div>
                     <textarea class="h-full w-full rounded-sm p-2" name="message" placeholder="Message" value="{{ old('message') }}"></textarea>
-                    @error('title')
+                    @error('message')
                         <div class="text-red-600">{{ $message }}</div>
                     @enderror
                 </div>
