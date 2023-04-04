@@ -14,50 +14,58 @@
 </head>
 
 <body class="relative">
-
+    {{-- ? // NOTE: Probably nedd to refactor --}}
     <nav class="w-full" x-data="{ isOpen: false }" @keydown.escape="isOpen = false" x-data="{ isOpen: false }"
         @keydown.escape="isOpen = false">
-        <div class="absolute top-0 left-0 z-10 hidden w-full justify-center pt-4 pb-2 text-white md:flex">
-            <div class="flex w-2/12 flex-grow items-center justify-end space-x-12">
+        {{-- top one --}}
+        <div
+            class="absolute top-0 left-0 z-10 flex w-full justify-center pt-4 pb-2 text-center text-white max-lg:block">
+
+            <div class="w-full text-center max-lg:w-full lg:order-2 lg:w-52 xl:mx-16">
+                <div class="inline-block w-32 place-items-center text-center xl:w-8/12">
+                    <img class="w-full" src="{{ asset('images/logo-ivf.png') }}" alt="logo">
+                    <p class="text-center font-bold text-black">Brawijaya IVF Center</p>
+                </div>
+            </div>
+
+            <div
+                class="flex w-2/12 flex-grow items-center justify-end space-x-12 max-lg:mr-4 max-lg:inline-block max-lg:w-auto max-sm:hidden lg:order-1">
                 <a class="nav-link blue" href="#service">Our Service</a>
                 <a class="nav-link blue" href="#why">Why Brawijaya IVF Center</a>
             </div>
 
-            <div class="w-52 text-center">
-                <div class="inline-block w-8/12 place-items-center text-center">
-                    <img class="w-full" src="{{ asset('images/logo-ivf.png') }}" alt="logo">
-                </div>
-            </div>
-
-            <div class="flex w-2/12 flex-grow items-center justify-start space-x-12">
+            <div
+                class="flex w-2/12 flex-grow items-center justify-start space-x-12 max-lg:inline-block max-lg:w-auto max-sm:hidden lg:order-3">
                 <a class="nav-link blue" href="#faq">FAQ</a>
                 <a class="nav-link blue" href="#contact">Ask Us for More</a>
             </div>
         </div>
 
         {{-- fixed one --}}
-        <div class="fixed top-0 left-0 z-30 hidden w-full -translate-y-[110%] justify-center bg-white pt-4 pb-2 text-black transition duration-500 ease-in-out md:flex"
+        <div class="fixed top-0 left-0 z-30 flex w-full -translate-y-[110%] justify-center bg-white pt-4 pb-2 text-center text-black transition duration-500 ease-in-out max-lg:block max-sm:hidden"
             id="navbarFixed">
-            <div class="flex w-2/12 flex-grow items-center justify-end gap-10">
-                <a class="nav-link" href="#service">Our Service</a>
-                <a class="nav-link" href="#why">Why Brawijaya IVF Center</a>
-            </div>
-
-            <div class="w-52 text-center">
-                <div class="inline-block w-8/12 place-items-center text-center">
-                    <img class="w-full" src="{{ asset('images/logo-ivf.png') }}" alt="logo">
+            <div class="w-full text-center max-lg:w-full lg:order-2 lg:w-52">
+                <div class="inline-block w-32 place-items-center text-center xl:w-8/12">
+                    <img class="mx-auto w-5/12" src="{{ asset('images/logo-ivf.png') }}" alt="logo">
                 </div>
             </div>
 
-            <div class="flex w-2/12 flex-grow items-center justify-start gap-10">
-                <a class="nav-link" href="#faq">FAQ</a>
-                <a class="nav-link" href="#contact">Ask Us for More</a>
+            <div
+                class="flex w-2/12 flex-grow items-center justify-end space-x-12 max-lg:mr-4 max-lg:inline-block max-lg:w-auto max-sm:hidden lg:order-1">
+                <a class="nav-link blue" href="#service">Our Service</a>
+                <a class="nav-link blue" href="#why">Why Brawijaya IVF Center</a>
+            </div>
+
+            <div
+                class="flex w-2/12 flex-grow items-center justify-start space-x-12 max-lg:inline-block max-lg:w-auto max-sm:hidden lg:order-3">
+                <a class="nav-link blue" href="#faq">FAQ</a>
+                <a class="nav-link blue" href="#contact">Ask Us for More</a>
             </div>
 
         </div>
 
         <!-- Mobile menu button -->
-        <div class="fixed left-0 top-0 z-50 md:hidden" :class="{ 'w-full bg-white': isOpen }">
+        <div class="fixed left-0 top-0 z-50 sm:hidden" :class="{ 'w-full bg-white': isOpen }">
             <div class="relative left-0 flex h-16 items-center">
                 <button
                     class="ml-2 inline-flex items-center justify-center rounded-md bg-red-700 p-2 text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
@@ -92,81 +100,7 @@
         </div>
     </nav>
 
-    <header class="relative flex h-screen max-h-[calc(100vh-180px)] flex-col items-center justify-center align-middle">
-        <div class="container">
-            <h1 class="mb-6 text-4xl tracking-wide text-[#886b88] md:text-5xl lg:mb-12 lg:text-6xl">Hope is real, make
-                your dreams with your loved
-                one come true!
-            </h1>
-            <a class="font-button rounded-sm border-2 border-white py-1 px-4 font-mono uppercase text-white"
-                href="#">Explore More...</a>
-        </div>
-    </header>
-
-    <section class="bg-g-dark-blue" id="service">
-        <div class="bright-arrow">
-            <div class="bright-arrow-1" style="border-color: rgb(71, 82, 102);"></div>
-            <div class="bright-arrow-2" style="border-color: rgb(71, 82, 102);"></div>
-        </div>
-
-        <div class="container flex flex-col items-center justify-center gap-8 py-20 text-lg text-white md:flex-row">
-            <img class="w-1/2 object-contain object-top" src="{{ asset('assets/service.webp') }}" alt="">
-            <div class="flex flex-col items-center gap-6">
-                <h2 class="text-4xl font-black">Our Services</h2>
-                <p class="text-center">We provide various services to help you realize your dream of having a baby.
-                </p>
-                <ul class="list-disc pl-10">
-                    <li>Consultation</li>
-                    <li>IVF Services</li>
-                    <li>Pregnancy Program and Other Fertility Check-ups</li>
-                    <li>Infertility Treatment</li>
-                </ul>
-                <a class="font-button rounded-[4px] border-2 border-white py-1 px-4 font-mono text-xl uppercase text-white"
-                    href="#">Read
-                    More</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="bg-g-wood-gold" id="why">
-        <div class="container flex flex-col items-center gap-8 py-20 text-lg md:flex-row">
-            <div class="flex flex-col items-center gap-6 text-center">
-                <h2 class="text-4xl font-black">Why Brawijaya IVF Center</h2>
-
-                <p>
-                    Brawijaya IVF Center brings new hope for a baby. This service is supported by obstetrics and
-                    gynecology (obstetrics and gynecology) specialists, fertility consultants and reproductive
-                    endocrinologists who are experienced in their fields. The clinic handles in vitro fertilization
-                    (IVF), artificial insemination, sperm disorders, and all causes of fertility problems.
-                </p>
-                <a class="font-button rounded-[4px] border-2 border-white py-1 px-4 font-mono text-xl uppercase text-white"
-                    href="#">Read
-                    More</a>
-            </div>
-            <img class="w-1/2 object-contain object-top max-md:order-first" src="{{ asset('assets/why.webp') }}"
-                alt="">
-        </div>
-
-    </section>
-
-    <section class="flex flex-col items-center justify-center bg-g-dark-blue py-14 text-white max-xl:h-screen"
-        id="faq">
-
-        <div class="mb-10 flex flex-col items-center justify-center gap-4">
-            <h2 class="text-4xl font-bold uppercase">FAQ</h2>
-            <p class="text-xl">Safe, reliable, and unique.</p>
-        </div>
-
-        <div class="flex flex-col items-start justify-center gap-4 px-12 text-black md:flex-row lg:px-24">
-            <img class="h-auto w-full md:w-1/3" src="{{ asset('assets/faq.webp') }}" alt="">
-            <div class="flex flex-col gap-2 rounded-sm bg-white p-4">
-                <p class="text-2xl">SAFETY FIRST</p>
-                <p class="font-sans font-bold text-red-600">Rigorously Tested</p>
-                <p class="font-sans font-bold">We spare no expense to make sure everything runs smoothly.</p>
-            </div>
-        </div>
-
-    </section>
+    @yield('content')
 
     <footer class="flex flex-col items-center bg-g-wood-gold" id="contact">
         <h2 class="pt-10 text-center text-4xl font-bold">Ask Us for More Information</h2>
@@ -177,8 +111,8 @@
 
                 <div class="flex gap-4">
                     <div>
-                        <input class="w-full rounded-sm p-2" type="text" name="name"
-                            value="{{ old('name') }}" placeholder="Name">
+                        <input class="w-full rounded-sm p-2" type="text" name="name" value="{{ old('name') }}"
+                            placeholder="Name">
                         @error('name')
                             <div class="text-red-600">{{ $message }}</div>
                         @enderror
@@ -260,54 +194,6 @@
 
     </footer>
 </body>
-
-
-<script>
-    const el = document.querySelector('#service')
-    const navbarFixed = document.querySelector('#navbarFixed')
-    let old_visible = false;
-
-    function isElementInViewport(el) {
-
-        var rect = el.getBoundingClientRect();
-        return (
-            rect.top <= 50
-            // &&
-            // rect.left >= 0 &&
-            // rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-            // rect.right <= (window.innerWidth || document.documentElement.clientWidth) /* or $(window).width() */
-        );
-    }
-
-
-    function onVisibilityChange(el, callback) {
-
-        return function() {
-            var visible = isElementInViewport(el);
-            if (visible != old_visible) {
-                old_visible = visible;
-                if (typeof callback == 'function') {
-                    callback();
-                }
-            }
-        }
-    }
-
-    var handler = onVisibilityChange(el, function() {
-        navbarFixed.classList.toggle("-translate-y-[110%]");
-    });
-
-    if (window.addEventListener) {
-        // addEventListener('DOMContentLoaded', handler, false);
-        // addEventListener('load', handler, false);
-        addEventListener('scroll', handler, false);
-        addEventListener('resize', handler, false);
-    } else if (window.attachEvent) {
-        // attachEvent('onDOMContentLoaded', handler); // Internet Explorer 9+ :(
-        // attachEvent('onload', handler);
-        attachEvent('onscroll', handler);
-        attachEvent('onresize', handler);
-    }
-</script>
+<script src="{{ asset('dist/js/app.js') }}"></script>
 
 </html>

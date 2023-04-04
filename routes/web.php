@@ -15,3 +15,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'IndexController@index');
 Route::post('/', 'IndexController@store')->name('storeMessage');
+
+Route::view('/service', 'pages/services');

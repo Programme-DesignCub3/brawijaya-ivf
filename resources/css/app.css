@@ -4,7 +4,7 @@
 
 @layer components {
     .nav-link {
-        @apply text-base text-gray-700 font-bold leading-none tracking-normal min-w-[200.2px] text-center;
+        @apply text-base text-gray-700 font-bold leading-none tracking-normal text-center;
     }
 
     .nav-link.blue {
@@ -17,7 +17,7 @@ html {
     scroll-behavior: smooth;
 }
 
-header {
+header.home {
     @apply leading-5 font-black bg-fixed bg-no-repeat bg-cover bg-transparent bg-center text-center;
     color: #555555;
     background-image: url("../images/baby_hand.webp");
