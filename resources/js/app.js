@@ -6,7 +6,6 @@ let old_visible = false;
 
 function isElementInViewport(el) {
     var rect = el.getBoundingClientRect();
-    console.log(rect.top);
     return (
         rect.top <= -500
         // &&

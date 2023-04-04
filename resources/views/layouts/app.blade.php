@@ -9,7 +9,6 @@
 
     <link rel="stylesheet" href="{{ asset('dist/css/font.css') }}">
     <link rel="stylesheet" href="{{ asset('dist/css/app.css') }}">
-    <script defer src="https://unpkg.com/alpinejs@3.2.4/dist/cdn.min.js"></script>
 
 </head>
 
@@ -22,7 +21,7 @@
             class="absolute top-0 left-0 z-10 flex w-full justify-center pt-4 pb-2 text-center text-white max-lg:block">
 
             <div class="w-full text-center max-lg:w-full lg:order-2 lg:w-52 xl:mx-16">
-                <div class="inline-block w-32 place-items-center text-center xl:w-8/12">
+                <div class="inline-block w-28 place-items-center text-center xl:w-8/12">
                     <img class="w-full" src="{{ asset('images/logo-ivf.png') }}" alt="logo">
                     <p class="text-center font-bold text-black">Brawijaya IVF Center</p>
                 </div>
@@ -145,40 +144,49 @@
                 height="250" scrolling="no"
                 style="pointer-events: none; height: 203px; margin-top: 5px; margin-bottom: 5px;"></iframe>
 
-
             <ul class="font-montserat max-md:order-1">
-                <li class="font-bold">
-                    <svg class="inline-block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                <li class="space-x-2 font-bold">
+                    <svg class="inline-block h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                        fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z"
+                            clip-rule="evenodd" />
                     </svg>
-                    Brawijaya Hospital Antasari
+
+                    <span>Brawijaya Hospital Antasari</span>
                 </li>
-                <li class="font-bold">
-                    <svg class="inline-block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+
+                <li class="space-x-2 font-bold">
+                    <svg class="inline-block h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none"
                         viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round"
                             d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
+
                     <span>Mon - Sun</span>
                 </li>
-                <li class="font-bold">
-                    <svg class="inline-block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+
+                <li class="space-x-2 font-bold">
+                    <svg class="inline-block h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                        fill="currentColor">
+                        <path d="M10.5 18.75a.75.75 0 000 1.5h3a.75.75 0 000-1.5h-3z" />
+                        <path fill-rule="evenodd"
+                            d="M8.625.75A3.375 3.375 0 005.25 4.125v15.75a3.375 3.375 0 003.375 3.375h6.75a3.375 3.375 0 003.375-3.375V4.125A3.375 3.375 0 0015.375.75h-6.75zM7.5 4.125C7.5 3.504 8.004 3 8.625 3H9.75v.375c0 .621.504 1.125 1.125 1.125h2.25c.621 0 1.125-.504 1.125-1.125V3h1.125c.621 0 1.125.504 1.125 1.125v15.75c0 .621-.504 1.125-1.125 1.125h-6.75A1.125 1.125 0 017.5 19.875V4.125z"
+                            clip-rule="evenodd" />
                     </svg>
+
                     <span>halo Brawijya 150160</span>
                 </li>
-                <li class="">
-                    <svg class="inline-block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+
+                <li class="space-x-2">
+                    <svg class="inline-block h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                        fill="currentColor">
+                        <path
+                            d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
+                        <path
+                            d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
                     </svg>
+
                     <span>Marketing@brawijayahealthcare.com</span>
                 </li>
             </ul>
@@ -195,5 +203,6 @@
     </footer>
 </body>
 <script src="{{ asset('dist/js/app.js') }}"></script>
+<script defer src="https://unpkg.com/alpinejs@3.2.4/dist/cdn.min.js"></script>
 
 </html>

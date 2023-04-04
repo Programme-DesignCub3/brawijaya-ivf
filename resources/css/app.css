@@ -23,6 +23,10 @@ header.home {
     background-image: url("../images/baby_hand.webp");
 }
 
+.max-h-0 {
+    max-height: 0;
+}
+
 .container {
     @apply relative max-w-6xl my-0 px-4 lg:px-20 xl:px-0 xl:mx-auto;
 }

@@ -1,5 +1,6 @@
 <?php
 
+use TCG\Voyager\Facades\Voyager;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,3 +18,8 @@ Route::get('/', 'IndexController@index');
 Route::post('/', 'IndexController@store')->name('storeMessage');
 
 Route::view('/service', 'pages/services');
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
