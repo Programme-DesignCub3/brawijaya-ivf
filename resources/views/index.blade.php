@@ -1,5 +1,4 @@
-@extends('layouts.app')
-@section('content')
+@component('layouts.app')
     <header class="home relative flex h-screen max-h-[90vh] flex-col items-center justify-center align-middle">
         <div class="container py-40">
             <h1 class="mb-6 text-4xl tracking-wide text-[#886b88] md:text-5xl lg:mb-12 lg:text-6xl xl:text-7xl">
@@ -66,15 +65,21 @@
             <img class="h-auto w-full md:w-1/3" src="{{ asset('assets/faq.webp') }}" alt="">
 
             <div class="mx-auto w-full max-w-xl border border-gray-200 bg-white" x-data="{ selected: null }">
-                <ul class="shadow-box">
+                <div class="flex flex-col gap-2 rounded-sm bg-white p-4">
+                    <p class="text-2xl">SAFETY FIRST</p>
+                    <p class="font-sans font-bold text-red-600">Rigorously Tested</p>
+                    <p class="font-sans font-bold">We spare no expense to make sure everything runs smoothly.</p>
+                </div>
+
+                <ul class="shadow-box list-none font-MuseoSans">
                     @foreach ($faqs as $faq)
                         <li class="relative border-b border-gray-200">
 
                             <button class="w-full px-8 py-6 text-left" type="button"
                                 @click="selected !=={{ $loop->iteration }} ? selected = {{ $loop->iteration }} : selected = null">
                                 <div class="flex items-center justify-between">
-                                    <span>
-                                        {{ $faq->question }} </span>
+                                    <span class="font-MuseoSans"> {{ $faq->question }} </span>
+
                                     <svg class="h-6 w-6 rotate-0 transition duration-700 ease-in-out"
                                         x-bind:class="selected == {{ $loop->iteration }} ? 'h-6 w-6 rotate-180' : 'h-6 w-6'"
                                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -99,16 +104,9 @@
                         </li>
                     @endforeach
 
-
-                    {{-- <div class="flex flex-col gap-2 rounded-sm bg-white p-4">
-                    <p class="text-2xl">SAFETY FIRST</p>
-                    <p class="font-sans font-bold text-red-600">Rigorously Tested</p>
-                    <p class="font-sans font-bold">We spare no expense to make sure everything runs smoothly.</p>
-                </div> --}}
-
                 </ul>
             </div>
         </div>
 
     </section>
-@endsection
+@endcomponent

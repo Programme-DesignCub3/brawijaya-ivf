@@ -1,15 +1,13 @@
 @component('layouts.app', ['white_nav' => true])
     <section class="bg-g-dark-blue" id="service">
         <div class="container flex flex-col items-center justify-center gap-8 py-20 pt-44 text-lg text-white">
-            <h2 class="text-4xl font-black">{{ $service->title }}</h2>
-            <img class="w-1/2 object-contain object-top" src="{{ asset('assets/service.webp') }}" alt="">
+            <h2 class="text-4xl font-black">{{ $why->title }}</h2>
+            <img class="mx-auto mb-2 w-1/2 object-contain object-top max-md:order-first" src="{{ asset('assets/why.webp') }}"
+                alt="">
             <div class="flex flex-col items-center gap-6">
 
-                <p class="text-center">{{ $service->subtitle }}
-                </p>
-                <div class="list-disc pl-10">
-                    {!! $service->content !!}
-                </div>
+
+                <div>{!! $why->content !!}</div>
 
                 <div>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit dolorem earum vitae accusantium

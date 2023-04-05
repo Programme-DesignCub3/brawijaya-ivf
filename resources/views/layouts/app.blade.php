@@ -14,6 +14,7 @@
 
 <body class="relative">
     {{-- ? // NOTE: Probably nedd to refactor --}}
+
     <nav class="w-full" x-data="{ isOpen: false }" @keydown.escape="isOpen = false" x-data="{ isOpen: false }"
         @keydown.escape="isOpen = false">
         {{-- top one --}}
@@ -22,21 +23,27 @@
 
             <div class="w-full text-center max-lg:w-full lg:order-2 lg:w-52 xl:mx-16">
                 <div class="inline-block w-28 place-items-center text-center xl:w-8/12">
-                    <img class="w-full" src="{{ asset('images/logo-ivf.png') }}" alt="logo">
-                    <p class="text-center font-bold text-black">Brawijaya IVF Center</p>
+                    <img class="w-full"
+                        src="{{ $white_nav ?? false ? asset('images/logo-ivf-light.png') : asset('images/logo-ivf.png') }}"
+                        alt="logo">
+                    <p class="{{ $white_nav ?? false ? 'text-white' : 'text-black' }} text-center font-bold">Brawijaya
+                        IVF Center
+                    </p>
                 </div>
             </div>
 
             <div
                 class="flex w-2/12 flex-grow items-center justify-end space-x-12 max-lg:mr-4 max-lg:inline-block max-lg:w-auto max-sm:hidden lg:order-1">
-                <a class="nav-link blue" href="#service">Our Service</a>
-                <a class="nav-link blue" href="#why">Why Brawijaya IVF Center</a>
+                <a class="nav-link {{ $white_nav ?? false ? 'text-white' : 'blue' }}" href="/service">Our Service</a>
+                <a class="nav-link {{ $white_nav ?? false ? 'text-white' : 'blue' }}" href="/why">Why Brawijaya IVF
+                    Center</a>
             </div>
 
             <div
                 class="flex w-2/12 flex-grow items-center justify-start space-x-12 max-lg:inline-block max-lg:w-auto max-sm:hidden lg:order-3">
-                <a class="nav-link blue" href="#faq">FAQ</a>
-                <a class="nav-link blue" href="#contact">Ask Us for More</a>
+                <a class="nav-link {{ $white_nav ?? false ? 'text-white' : 'blue' }}" href="#faq">FAQ</a>
+                <a class="nav-link {{ $white_nav ?? false ? 'text-white' : 'blue' }}" href="#contact">Ask Us for
+                    More</a>
             </div>
         </div>
 
@@ -99,7 +106,7 @@
         </div>
     </nav>
 
-    @yield('content')
+    {{ $slot }}
 
     <footer class="flex flex-col items-center bg-g-wood-gold" id="contact">
         <h2 class="pt-10 text-center text-4xl font-bold">Ask Us for More Information</h2>
@@ -144,7 +151,7 @@
                 height="250" scrolling="no"
                 style="pointer-events: none; height: 203px; margin-top: 5px; margin-bottom: 5px;"></iframe>
 
-            <ul class="font-montserat max-md:order-1">
+            <ul class="list-none font-montserat max-md:order-1">
                 <li class="space-x-2 font-bold">
                     <svg class="inline-block h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                         fill="currentColor">

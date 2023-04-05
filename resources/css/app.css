@@ -23,6 +23,10 @@ header.home {
     background-image: url("../images/baby_hand.webp");
 }
 
+ul {
+    @apply list-disc;
+}
+
 .max-h-0 {
     max-height: 0;
 }

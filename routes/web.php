@@ -15,10 +15,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'IndexController@index');
-Route::post('/', 'IndexController@store')->name('storeMessage');
+Route::post('/', 'IndexController@store')
+    ->name('storeMessage');
 
-Route::view('/service', 'pages/services');
-
+Route::get('/service', 'ServiceController@index');
+Route::get('/why', 'WhyController@index');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
