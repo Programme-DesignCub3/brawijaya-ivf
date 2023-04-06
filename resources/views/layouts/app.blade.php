@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>{{ appName() }}</title>
+    <title>Brawijaya IVF</title>
 
     <link rel="stylesheet" href="{{ asset('dist/css/font.css') }}">
     <link rel="stylesheet" href="{{ asset('dist/css/app.css') }}">
@@ -13,29 +13,30 @@
 </head>
 
 <body class="relative">
-    {{-- ? // NOTE: Probably nedd to refactor --}}
 
+    {{-- ? // NOTE: Probably nedd to refactor --}}
     <nav class="w-full" x-data="{ isOpen: false }" @keydown.escape="isOpen = false" x-data="{ isOpen: false }"
         @keydown.escape="isOpen = false">
+
         {{-- top one --}}
         <div
             class="absolute top-0 left-0 z-10 flex w-full justify-center pt-4 pb-2 text-center text-white max-lg:block">
 
             <div class="w-full text-center max-lg:w-full lg:order-2 lg:w-52 xl:mx-16">
-                <div class="inline-block w-28 place-items-center text-center xl:w-8/12">
+                <a class="inline-block w-28 place-items-center text-center xl:w-8/12" href="/">
                     <img class="w-full"
                         src="{{ $white_nav ?? false ? asset('images/logo-ivf-light.png') : asset('images/logo-ivf.png') }}"
                         alt="logo">
                     <p class="{{ $white_nav ?? false ? 'text-white' : 'text-black' }} text-center font-bold">Brawijaya
                         IVF Center
                     </p>
-                </div>
+                </a>
             </div>
 
             <div
                 class="flex w-2/12 flex-grow items-center justify-end space-x-12 max-lg:mr-4 max-lg:inline-block max-lg:w-auto max-sm:hidden lg:order-1">
-                <a class="nav-link {{ $white_nav ?? false ? 'text-white' : 'blue' }}" href="/service">Our Service</a>
-                <a class="nav-link {{ $white_nav ?? false ? 'text-white' : 'blue' }}" href="/why">Why Brawijaya IVF
+                <a class="nav-link {{ $white_nav ?? false ? 'text-white' : 'blue' }}" href="#service">Our Service</a>
+                <a class="nav-link {{ $white_nav ?? false ? 'text-white' : 'blue' }}" href="#why">Why Brawijaya IVF
                     Center</a>
             </div>
 
@@ -51,9 +52,9 @@
         <div class="fixed top-0 left-0 z-30 flex w-full -translate-y-[110%] justify-center bg-white pt-4 pb-2 text-center text-black transition duration-500 ease-in-out max-lg:block max-sm:hidden"
             id="navbarFixed">
             <div class="w-full text-center max-lg:w-full lg:order-2 lg:w-52">
-                <div class="inline-block w-32 place-items-center text-center xl:w-8/12">
+                <a class="inline-block w-32 place-items-center text-center xl:w-8/12" href="/">
                     <img class="mx-auto w-5/12" src="{{ asset('images/logo-ivf.png') }}" alt="logo">
-                </div>
+                </a>
             </div>
 
             <div
@@ -117,8 +118,8 @@
 
                 <div class="flex gap-4">
                     <div>
-                        <input class="w-full rounded-sm p-2" type="text" name="name" value="{{ old('name') }}"
-                            placeholder="Name">
+                        <input class="w-full rounded-sm p-2" type="text" name="name"
+                            value="{{ old('name') }}" placeholder="Name">
                         @error('name')
                             <div class="text-red-600">{{ $message }}</div>
                         @enderror

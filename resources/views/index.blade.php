@@ -28,7 +28,7 @@
                 </div>
 
                 <a class="font-button rounded-[4px] border-2 border-white py-1 px-4 font-mono text-xl uppercase text-white"
-                    href="#">Read
+                    href="/service">Read
                     More</a>
             </div>
         </div>
@@ -44,7 +44,7 @@
                 {!! $why->content !!}
 
                 <a class="font-button rounded-[4px] border-2 border-white py-1 px-4 font-mono text-xl uppercase text-white"
-                    href="#">Read
+                    href="/why">Read
                     More</a>
             </div>
             <img class="w-1/2 object-contain object-top max-md:order-first" src="{{ asset('assets/why.webp') }}"
